@@ -1,0 +1,105 @@
+@import "./variables.scss";
+
+.header {
+	max-width: 100rem;
+	height: 12.75rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__left {
+		display: flex;
+		align-items: center;
+		gap: 9.375rem;
+		&__logo {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+
+			font-family: "Roboto", sans-serif;
+			font-weight: 600;
+			font-size: 2.375rem;
+			line-height: 0;
+			letter-spacing: 0;
+			color: $darkblue;
+			text-decoration: none;
+		}
+
+		&__menu {
+			display: flex;
+			gap: 2.5rem;
+
+			&__link {
+				font-family: "Roboto", sans-serif;
+				font-weight: 600;
+				font-size: 1.25rem;
+				line-height: 0;
+				letter-spacing: 0;
+				color: $darkblue;
+				position: relative;
+				text-decoration: none;
+				transition: all 0.3s ease-in-out;
+
+				&:before {
+					content: "";
+					position: absolute;
+					width: 0;
+					height: 2px;
+					top: 12px;
+					left: 0;
+					background-color: $darkblue;
+					visibility: hidden;
+					transition: all 0.3s ease-out;
+				}
+				&:hover:before {
+					visibility: visible;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		&__search {
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			width: 23.5rem;
+			height: 4.125rem;
+			border-radius: 2.25rem;
+			padding: 0.4rem;
+			background-color: #fafafa;
+
+			&__input {
+				width: 100%;
+				height: 4rem;
+				border-radius: 2.25rem;
+				border: none;
+				outline: none;
+				background-color: #fafafa;
+				padding-left: 1.5rem;
+				@include paragraph();
+			}
+		}
+
+		&__cart {
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+			border: 1px solid #e0e0e0;
+			border-radius: 2.25rem;
+			padding: 0.4rem;
+			padding-right: 1rem;
+
+			@include paragraph();
+			font-family: "Roboto", sans-serif;
+			text-decoration: none;
+			font-weight: 500;
+		}
+	}
+}
