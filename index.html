@@ -7,22 +7,43 @@
 		<link rel="stylesheet" href="./css/index.css" />
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/burgermenu.css" />
 	</head>
 	<body>
 		<!-- Header -->
 		<header class="header">
 			<div class="header__left">
+				<!-- burger menu -->
+				<nav role="navigation">
+					<div id="menuToggle">
+						<input type="checkbox" / class="burger__menu">
+
+						<span></span>
+						<span></span>
+						<span></span>
+
+						<ul id="menu">
+							<a href="#" class="header__left__menu__link"
+								>Home</a
+							>
+							<a href="#" class="header__left__menu__link"
+								>About</a
+							>
+							<a href="#" class="header__left__menu__link"
+								>Shop</a
+							>
+						</ul>
+					</div>
+				</nav>
+
+				<!-- Logo -->
 				<a href="#" class="header__left__logo">
-					<img
-						src="./Assets/Header/Logo.svg"
-						alt="LOGO"
-						width="36px"
-						height="75px"
-					/>
+					<img src="./Assets/Header/Logo.svg" alt="LOGO" id="logo" />
 					Organick
 				</a>
 
-				<nav class="header__left__menu">
+				<!-- Menu -->
+				<nav role="navigation" class="header__left__menu">
 					<a href="#" class="header__left__menu__link">Home</a>
 					<a href="#" class="header__left__menu__link">About</a>
 					<a href="#" class="header__left__menu__link">Shop</a>
@@ -47,9 +68,11 @@
 				</div>
 				<a href="#" class="header__right__cart">
 					<img src="./Assets/Header/CartIcon.svg" alt="CartIcon" />
-					<p>Cart(0)</p>
+					<p id="count">Cart(0)</p>
 				</a>
 			</div>
 		</header>
+
+		<!-- Main -->
 	</body>
 </html>
