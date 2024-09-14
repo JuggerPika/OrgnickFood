@@ -81,12 +81,13 @@
 
 	#menu {
 		position: absolute;
-		width: 150px;
+		width: 15rem;
+		height: 100vh;
 		margin: -100px 0 0 -100px;
 		padding-left: 100px;
 		padding-top: 140px;
 
-		background: #fff;
+		background-color: #fff;
 		list-style-type: none;
 
 		transform-origin: 0% 0%;

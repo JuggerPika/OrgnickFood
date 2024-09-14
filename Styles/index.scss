@@ -15,6 +15,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	@media (max-width: 576px) {
+		height: 50vh;
+	}
+
 	&__content {
 		display: inline-flex;
 		flex-direction: column;
@@ -23,27 +27,23 @@
 		margin: 14rem auto auto 16.25rem;
 
 		@media (max-width: 1280px) {
-			// Для великих ноутбуків
 			width: 30rem;
 			margin: 10rem auto auto 12rem;
 		}
 
 		@media (max-width: 1024px) {
-			// Для стандартних ноутбуків
 			width: 28rem;
 			margin: 8rem auto auto 10rem;
 		}
 
 		@media (max-width: 768px) {
-			// Для планшетів
 			width: 25rem;
 			margin: 6rem auto auto 8rem;
 		}
 
 		@media (max-width: 576px) {
-			// Для мобільних телефонів
 			width: 20rem;
-			margin: 4em auto auto 2rem;
+			margin: 2em auto auto 2rem;
 		}
 
 		&__caption {

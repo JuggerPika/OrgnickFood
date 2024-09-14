@@ -15,6 +15,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 576px) {
+  .main {
+    height: 50vh;
+  }
+}
 .main__content {
   display: inline-flex;
   flex-direction: column;
@@ -43,7 +48,7 @@
 @media (max-width: 576px) {
   .main__content {
     width: 20rem;
-    margin: 4em auto auto 2rem;
+    margin: 2em auto auto 2rem;
   }
 }
 .main__content__caption {

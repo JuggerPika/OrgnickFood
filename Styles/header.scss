@@ -149,13 +149,17 @@
 
 @media (max-width: 720px) {
 	.header {
-		margin-top: 2rem;
+		margin-top: 0.5rem;
 		height: 5rem;
 	}
 
+	.header__left {
+		gap: 0.5rem;
+	}
+
 	.header__right__search {
-		width: 4rem;
-		height: 4rem;
+		width: 3rem;
+		height: 3rem;
 		border-radius: 2.25rem;
 		background: none;
 		&__input {
@@ -164,8 +168,8 @@
 	}
 
 	.header__right__cart {
-		width: 4rem;
-		height: 4rem;
+		width: 3rem;
+		height: 3rem;
 		border: none;
 		padding: 0;
 
