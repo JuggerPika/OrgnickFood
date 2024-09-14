@@ -17,7 +17,7 @@
 }
 @media (max-width: 576px) {
   .main {
-    height: 50vh;
+    height: 60vh;
   }
 }
 .main__content {
